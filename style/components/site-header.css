@@ -1,0 +1,79 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 18px clamp(16px, 5vw, 64px);
+  background: rgba(16, 15, 20, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-weight: 800;
+}
+
+.brand-logo {
+  display: grid;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--cyan);
+  border-radius: 8px;
+  box-shadow: 0 0 18px rgba(37, 215, 255, 0.32);
+}
+
+.brand-name {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  line-height: 1.1;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 3vw, 34px);
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.main-nav a:hover {
+  color: var(--text);
+}
+
+.menu-button {
+  align-items: center;
+  justify-content: center;
+  display: none;
+  width: 46px;
+  background: var(--surface-soft);
+}
+
+@media (max-width: 900px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    padding-block: 14px;
+  }
+
+  .brand-name {
+    max-width: 9ch;
+  }
+}
