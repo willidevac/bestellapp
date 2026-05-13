@@ -95,15 +95,13 @@ a:focus-visible {
   font-weight: 800;
 }
 
-.brand-mark {
+.brand-logo {
   display: grid;
   flex: 0 0 auto;
   width: 42px;
   height: 42px;
-  place-items: center;
   border: 2px solid var(--cyan);
   border-radius: 8px;
-  color: var(--pink);
   box-shadow: 0 0 18px rgba(37, 215, 255, 0.32);
 }
 
