@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Bestellseite fuer ein Neo Tokyo Ramen Restaurant."
+    >
+    <title>Neo Neko Ramen</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Neo Neko Ramen Startseite">
+        <span class="brand-mark">NN</span>
+        <span class="brand-name">Neo Neko Ramen</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="#ramen">Ramen</a>
+        <a href="#sides">Sides</a>
+        <a href="#drinks">Drinks</a>
+      </nav>
+
+      <button class="menu-button" type="button" aria-label="Menue oeffnen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="restaurant-title">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="neon-grid"></div>
+        </div>
+
+        <div class="restaurant-card">
+          <div class="restaurant-logo" aria-hidden="true">
+            <span>麺</span>
+          </div>
+          <div class="restaurant-info">
+            <p class="kicker">Tokyo Nights Kitchen</p>
+            <h1 id="restaurant-title">Neo Neko Ramen</h1>
+            <p>
+              Dampfige Bowls, knusprige Sides und kalte Drinks fuer deine
+              naechste Ramen-Mission.
+            </p>
+            <div class="rating" aria-label="Bewertung 4,8 von 5 Sternen">
+              <span aria-hidden="true">★★★★★</span>
+              <strong>4,8</strong>
+              <small>(317)</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-layout">
+        <section class="menu-content" aria-label="Speisekarte">
+          <div class="category-tabs" aria-label="Kategorien">
+            <a href="#ramen">Ramen</a>
+            <a href="#sides">Sides</a>
+            <a href="#drinks">Drinks</a>
+          </div>
+
+          <section class="menu-category" id="ramen" aria-labelledby="ramen-title">
+            <h2 id="ramen-title">Signature Ramen</h2>
+
+            <article class="dish-card">
+              <div class="dish-image ramen-glow" aria-hidden="true"></div>
+              <div class="dish-copy">
+                <h3>Shibuya Shoyu</h3>
+                <p>Helle Soja-Bruehe, Chashu, Ajitama, Bambus und Fruehlauch.</p>
+              </div>
+              <div class="dish-action">
+                <strong>13,90 €</strong>
+                <button type="button" aria-label="Shibuya Shoyu hinzufuegen">+</button>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-image spicy-glow" aria-hidden="true"></div>
+              <div class="dish-copy">
+                <h3>Akihabara Miso</h3>
+                <p>Wuerzige Miso-Bruehe, Mais, Pak Choi, Chili-Oel und Sesam.</p>
+              </div>
+              <div class="dish-action">
+                <strong>14,50 €</strong>
+                <button type="button" aria-label="Akihabara Miso hinzufuegen">+</button>
+              </div>
+            </article>
+
+            <article class="dish-card">
+              <div class="dish-image black-glow" aria-hidden="true"></div>
+              <div class="dish-copy">
+                <h3>Kuro Garlic Tonkotsu</h3>
+                <p>Cremige Schweinebruehe, schwarzes Knoblauchoel und Nori.</p>
+              </div>
+              <div class="dish-action">
+                <strong>15,20 €</strong>
+                <button type="button" aria-label="Kuro Garlic Tonkotsu hinzufuegen">+</button>
+              </div>
+            </article>
+          </section>
+
+          <section class="menu-category" id="sides" aria-labelledby="sides-title">
+            <h2 id="sides-title">Small Plates</h2>
+
+            <article class="dish-card compact-card">
+              <div class="dish-copy">
+                <h3>Gyoza Circuit</h3>
+                <p>Sechs gebratene Teigtaschen mit Ingwer-Soja-Dip.</p>
+              </div>
+              <div class="dish-action">
+                <strong>6,90 €</strong>
+                <button type="button" aria-label="Gyoza Circuit hinzufuegen">+</button>
+              </div>
+            </article>
+
+            <article class="dish-card compact-card">
+              <div class="dish-copy">
+                <h3>Neon Karaage</h3>
+                <p>Knuspriges Chicken, Yuzu-Mayo und Shichimi-Pfeffer.</p>
+              </div>
+              <div class="dish-action">
+                <strong>7,40 €</strong>
+                <button type="button" aria-label="Neon Karaage hinzufuegen">+</button>
+              </div>
+            </article>
+
+            <article class="dish-card compact-card">
+              <div class="dish-copy">
+                <h3>Edamame Pulse</h3>
+                <p>Warme Bohnen mit Meersalz und Limetten-Chili-Flakes.</p>
+              </div>
+              <div class="dish-action">
+                <strong>4,80 €</strong>
+                <button type="button" aria-label="Edamame Pulse hinzufuegen">+</button>
+              </div>
+            </article>
+          </section>
+
+          <section class="menu-category" id="drinks" aria-labelledby="drinks-title">
+            <h2 id="drinks-title">Cold Drinks</h2>
+
+            <article class="dish-card compact-card">
+              <div class="dish-copy">
+                <h3>Yuzu Soda</h3>
+                <p>Spritzige Zitrus-Limo mit Eis und Minze.</p>
+              </div>
+              <div class="dish-action">
+                <strong>3,90 €</strong>
+                <button type="button" aria-label="Yuzu Soda hinzufuegen">+</button>
+              </div>
+            </article>
+
+            <article class="dish-card compact-card">
+              <div class="dish-copy">
+                <h3>Matcha Cloud</h3>
+                <p>Gekuehlter Matcha Latte mit Haferdrink.</p>
+              </div>
+              <div class="dish-action">
+                <strong>4,50 €</strong>
+                <button type="button" aria-label="Matcha Cloud hinzufuegen">+</button>
+              </div>
+            </article>
+
+            <article class="dish-card compact-card">
+              <div class="dish-copy">
+                <h3>Plum Iced Tea</h3>
+                <p>Schwarzer Tee, Pflaume, Zitrone und Crushed Ice.</p>
+              </div>
+              <div class="dish-action">
+                <strong>4,20 €</strong>
+                <button type="button" aria-label="Plum Iced Tea hinzufuegen">+</button>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <aside class="basket" aria-labelledby="basket-title">
+          <h2 id="basket-title">Dein Warenkorb</h2>
+
+          <div class="basket-items">
+            <article class="basket-item">
+              <strong>1 x Shibuya Shoyu</strong>
+              <div class="basket-item-row">
+                <button type="button" aria-label="Shibuya Shoyu entfernen">−</button>
+                <span>1</span>
+                <button type="button" aria-label="Shibuya Shoyu erhoehen">+</button>
+                <span>13,90 €</span>
+              </div>
+            </article>
+
+            <article class="basket-item">
+              <strong>1 x Gyoza Circuit</strong>
+              <div class="basket-item-row">
+                <button type="button" aria-label="Gyoza Circuit entfernen">−</button>
+                <span>1</span>
+                <button type="button" aria-label="Gyoza Circuit erhoehen">+</button>
+                <span>6,90 €</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="basket-summary">
+            <div>
+              <span>Zwischensumme</span>
+              <strong>20,80 €</strong>
+            </div>
+            <div>
+              <span>Lieferkosten</span>
+              <strong>4,99 €</strong>
+            </div>
+            <div class="summary-total">
+              <span>Gesamt</span>
+              <strong>25,79 €</strong>
+            </div>
+          </div>
+
+          <button class="checkout-button" type="button">Bestellen</button>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Neo Neko Ramen</p>
+      <a href="#top">Nach oben</a>
+      <a href="#">Impressum</a>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

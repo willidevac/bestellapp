@@ -1,0 +1,30 @@
+.ramen-glow {
+  background:
+    radial-gradient(circle at 50% 46%, #f7d587 0 22%, transparent 23%),
+    radial-gradient(circle at 43% 42%, #6e321c 0 8%, transparent 9%),
+    radial-gradient(circle at 62% 42%, #f5f0d8 0 9%, transparent 10%),
+    radial-gradient(circle at 34% 58%, #58d16a 0 6%, transparent 7%),
+    radial-gradient(circle at 67% 62%, #ff8a3d 0 7%, transparent 8%),
+    radial-gradient(circle, rgba(255, 178, 63, 0.5), transparent 68%),
+    #241821;
+}
+
+.spicy-glow {
+  background:
+    radial-gradient(circle at 50% 48%, #e45b35 0 24%, transparent 25%),
+    radial-gradient(circle at 38% 42%, #ffd86b 0 7%, transparent 8%),
+    radial-gradient(circle at 63% 44%, #7bd65d 0 8%, transparent 9%),
+    radial-gradient(circle at 51% 61%, #8f2a1e 0 10%, transparent 11%),
+    radial-gradient(circle, rgba(255, 61, 129, 0.45), transparent 68%),
+    #21151f;
+}
+
+.black-glow {
+  background:
+    radial-gradient(circle at 50% 48%, #dfd1a7 0 24%, transparent 25%),
+    radial-gradient(circle at 44% 40%, #15141a 0 10%, transparent 11%),
+    radial-gradient(circle at 61% 44%, #b86231 0 10%, transparent 11%),
+    radial-gradient(circle at 55% 62%, #2f3322 0 8%, transparent 9%),
+    radial-gradient(circle, rgba(37, 215, 255, 0.35), transparent 68%),
+    #14161d;
+}
