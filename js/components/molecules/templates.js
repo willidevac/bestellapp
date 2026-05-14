@@ -1,5 +1,5 @@
 function formatPrice(price) {
-  return `${price.toFixed(2).replace(".", ",")} ?`;
+  return `${price.toFixed(2).replace(".", ",")} €`;
 }
 
 function getCategoryTabTemplate(category) {
@@ -15,7 +15,7 @@ function getDishTemplate(dish) {
     <div class="dish-copy"><h3>${dish.name}</h3><p>${dish.description}</p></div>
     <div class="dish-action">
       <strong>${formatPrice(dish.price)}</strong>
-      <button type="button" data-add-dish="${dish.id}" aria-label="${dish.name} hinzuf?gen">+</button>
+      <button type="button" data-add-dish="${dish.id}" aria-label="${dish.name} hinzufügen">+</button>
     </div>
   </article>`;
 }
@@ -28,4 +28,27 @@ function getCategoryTemplate(category) {
     </div>
     <div class="dish-grid">${category.items.map(getDishTemplate).join("")}</div>
   </section>`;
+}
+
+function getBasketItemTemplate(item) {
+  return `<article class="basket-item">
+    <strong>${item.amount} x ${item.name}</strong>
+    <div class="basket-item-row">
+      <button type="button" data-remove-dish="${item.id}" aria-label="${item.name} löschen">x</button>
+      <button type="button" data-decrease-dish="${item.id}" aria-label="${item.name} verringern">-</button>
+      <span>${item.amount}</span>
+      <button type="button" data-increase-dish="${item.id}" aria-label="${item.name} erhöhen">+</button>
+      <span>${formatPrice(item.price * item.amount)}</span>
+    </div>
+  </article>`;
+}
+
+function getBasketSummaryTemplate(subtotal, delivery, total) {
+  return `<div><span>Zwischensumme</span><strong>${formatPrice(subtotal)}</strong></div>
+    <div><span>Lieferkosten</span><strong>${formatPrice(delivery)}</strong></div>
+    <div class="summary-total"><span>Gesamt</span><strong>${formatPrice(total)}</strong></div>`;
+}
+
+function getEmptyBasketTemplate() {
+  return `<p class="empty-basket">Dein Warenkorb ist noch leer.</p>`;
 }

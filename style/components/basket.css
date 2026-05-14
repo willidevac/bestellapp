@@ -67,6 +67,7 @@
 .basket-item-row,
 .basket-summary div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -87,11 +88,32 @@
   font-weight: 800;
 }
 
+@media (max-width: 380px) {
+  .basket-item-row span:last-child {
+    width: 100%;
+    margin-left: 0;
+    text-align: right;
+  }
+}
+
 .basket-summary {
   display: grid;
   gap: 9px;
   margin: 24px 0;
   color: var(--muted);
+}
+
+.empty-basket,
+.basket-message {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.basket-message {
+  min-height: 1.5em;
+  margin-top: 14px;
+  color: var(--lime);
+  font-weight: 800;
 }
 
 .summary-total {

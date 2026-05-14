@@ -4,42 +4,11 @@
     <h2 id="basket-title">Dein Warenkorb</h2>
   </div>
 
-  <div class="basket-items">
-    <article class="basket-item">
-      <strong>1 x Shibuya Shoyu</strong>
-      <div class="basket-item-row">
-        <button type="button" aria-label="Shibuya Shoyu entfernen">-</button>
-        <span>1</span>
-        <button type="button" aria-label="Shibuya Shoyu erhöhen">+</button>
-        <span>13,90 &euro;</span>
-      </div>
-    </article>
+  <div class="basket-items" data-basket-items></div>
+  <div class="basket-summary" data-basket-summary></div>
 
-    <article class="basket-item">
-      <strong>1 x Gyoza Circuit</strong>
-      <div class="basket-item-row">
-        <button type="button" aria-label="Gyoza Circuit entfernen">-</button>
-        <span>1</span>
-        <button type="button" aria-label="Gyoza Circuit erhöhen">+</button>
-        <span>6,90 &euro;</span>
-      </div>
-    </article>
-  </div>
-
-  <div class="basket-summary">
-    <div>
-      <span>Zwischensumme</span>
-      <strong>20,80 &euro;</strong>
-    </div>
-    <div>
-      <span>Lieferkosten</span>
-      <strong>4,99 &euro;</strong>
-    </div>
-    <div class="summary-total">
-      <span>Gesamt</span>
-      <strong>25,79 &euro;</strong>
-    </div>
-  </div>
-
-  <button class="checkout-button" type="button">Bestellen</button>
+  <button class="checkout-button" type="button" data-order-button>
+    Bestellen
+  </button>
+  <p class="basket-message" data-basket-message></p>
 </aside>
