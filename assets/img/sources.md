@@ -59,6 +59,23 @@ the Pixabay Content License.
   Source: https://pixabay.com/photos/tea-drink-iced-tea-fruit-beverage-6760875/
 - `drinks/hot-matcha-latte.jpg`  
   Source: https://pixabay.com/photos/matcha-latte-hot-matcha-beverage-2356763/
+- `drinks/yuzu-spark.jpg`
+  Source: https://pixabay.com/photos/fresh-fruit-tea-tea-drink-7575609/
+- `drinks/plum-ice-tea.jpg`
+  Source: https://pixabay.com/photos/iced-tea-drink-glass-cold-lemon-5416081/
+- `drinks/lychee-fizz.jpg`
+  Source: https://pixabay.com/photos/lychee-soda-drink-glass-lychee-7676791/
+- `drinks/melon-ramune.jpg`
+  Source: https://pixabay.com/photos/melon-soda-coffee-shop-cafe-drink-4431112/
+- `drinks/peach-sencha.jpg`
+  Source: https://pixabay.com/images/search/peach%20tea/
+- `drinks/ginger-lime-soda.jpg`
+  Source: https://pixabay.com/photos/lime-drink-glass-club-soda-907124/
+
+## Hero
+
+- `hero/sakura-fuji-banner.jpg`
+  Source: https://pixabay.com/photos/mount-fuji-cherry-blossoms-sakura-2332952/
 
 ## Desserts
 

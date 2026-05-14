@@ -152,68 +152,68 @@ const menuCategories = [
     icon: "./assets/icons/drinks-icon.svg",
     items: [
       {
-        id: "matcha-cloud",
-        name: "Matcha Cloud",
-        description: "Gekühlter Matcha Latte mit Haferdrink.",
-        price: 4.5,
-        image: "./assets/img/drinks/matcha-latte.jpg",
-        alt: "Matcha Latte"
-      },
-      {
-        id: "yuzu-ice-tea",
-        name: "Yuzu Ice Tea",
-        description: "Zitrus, Minze, Eis und leichter Schwarztee.",
-        price: 4.2,
-        image: "./assets/img/drinks/iced-tea.jpg",
-        alt: "Iced Tea"
-      },
-      {
         id: "iced-matcha-grid",
         name: "Iced Matcha Grid",
-        description: "Matcha, Milch, Eiswürfel und ein weicher Finish.",
-        price: 4.8,
+        description: "Kalter Matcha, Milch, Eiswürfel und Vanille.",
+        price: 4.5,
         image: "./assets/img/drinks/iced-matcha-latte.jpg",
         alt: "Iced Matcha Latte"
       },
       {
-        id: "matcha-pour",
-        name: "Matcha Pour",
-        description: "Frisch gemixt mit Milch und cremigem Schaum.",
-        price: 4.9,
-        image: "./assets/img/drinks/matcha-pour.jpg",
-        alt: "Matcha Pour"
+        id: "yuzu-spark",
+        name: "Yuzu Spark",
+        description: "Yuzu, Zitrone, Soda, Eis und frische Minze.",
+        price: 4.2,
+        image: "./assets/img/drinks/yuzu-spark.jpg",
+        alt: "Yuzu Soda"
       },
       {
-        id: "cafe-matcha",
-        name: "Cafe Matcha",
-        description: "Warmer Matcha mit Latte Art und sanfter Süßung.",
+        id: "plum-ice-tea",
+        name: "Plum Ice Tea",
+        description: "Schwarzer Tee, Pflaume, Zitrus und Crushed Ice.",
+        price: 4.8,
+        image: "./assets/img/drinks/plum-ice-tea.jpg",
+        alt: "Plum Iced Tea"
+      },
+      {
+        id: "lychee-fizz",
+        name: "Lychee Fizz",
+        description: "Litschi, Limette, Soda und ein Hauch Jasmin.",
+        price: 4.9,
+        image: "./assets/img/drinks/lychee-fizz.jpg",
+        alt: "Lychee Fizz"
+      },
+      {
+        id: "melon-ramune",
+        name: "Melon Ramune",
+        description: "Melone, Soda, Eis und bunte Neon-Süße.",
         price: 4.7,
-        image: "./assets/img/drinks/cafe-matcha.jpg",
-        alt: "Cafe Matcha"
+        image: "./assets/img/drinks/melon-ramune.jpg",
+        alt: "Melon Ramune"
       },
       {
         id: "ceremonial-matcha",
         name: "Ceremonial Matcha",
-        description: "Pur, intensiv, warm aufgeschlagen im Chawan.",
+        description: "Warmer Matcha, pur aufgeschlagen im Chawan.",
         price: 4.4,
         image: "./assets/img/drinks/ceremonial-matcha.jpg",
         alt: "Ceremonial Matcha"
       },
       {
-        id: "fruit-iced-tea",
-        name: "Fruit Iced Tea",
-        description: "Fruchtiger Tee, Eis, Zitrus und leichte Süßung.",
+        id: "peach-sencha",
+        name: "Peach Sencha",
+        description: "Grüner Tee, Pfirsich, Eis und Zitronenmelisse.",
         price: 4.1,
-        image: "./assets/img/drinks/fruit-iced-tea.jpg",
-        alt: "Fruit Iced Tea"
+        image: "./assets/img/drinks/peach-sencha.jpg",
+        alt: "Peach Sencha"
       },
       {
-        id: "hot-matcha-latte",
-        name: "Hot Matcha Latte",
-        description: "Heißer Matcha Latte mit cremiger Milch.",
+        id: "ginger-lime-soda",
+        name: "Ginger Lime Soda",
+        description: "Ingwer, Limette, Soda und viel Eis.",
         price: 4.6,
-        image: "./assets/img/drinks/hot-matcha-latte.jpg",
-        alt: "Hot Matcha Latte"
+        image: "./assets/img/drinks/ginger-lime-soda.jpg",
+        alt: "Ginger Lime Soda"
       }
     ]
   },

@@ -35,6 +35,7 @@
 .brand-name {
   font-size: clamp(1rem, 3vw, 1.25rem);
   line-height: 1.1;
+  overflow-wrap: anywhere;
 }
 
 .main-nav {
@@ -73,7 +74,16 @@
     padding-block: 14px;
   }
 
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-logo {
+    width: 38px;
+    height: 38px;
+  }
+
   .brand-name {
-    max-width: 9ch;
+    max-width: 10ch;
   }
 }
