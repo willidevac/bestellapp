@@ -10,14 +10,21 @@
     <span class="brand-name">Neo Neko Ramen</span>
   </a>
 
-  <nav class="main-nav" aria-label="Hauptnavigation">
+  <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation" data-main-nav>
     <a href="#ramen">Ramen</a>
     <a href="#sides">Sides</a>
     <a href="#drinks">Drinks</a>
     <a href="#desserts">Desserts</a>
   </nav>
 
-  <button class="menu-button" type="button" aria-label="Menü öffnen">
+  <button
+    class="menu-button"
+    type="button"
+    aria-label="Menü öffnen"
+    aria-controls="main-nav"
+    aria-expanded="false"
+    data-menu-button
+  >
     <img src="./assets/icons/menu-icon.svg" alt="" width="24" height="24">
   </button>
 </header>

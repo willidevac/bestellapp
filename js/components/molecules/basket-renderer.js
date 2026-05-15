@@ -8,6 +8,10 @@ function getSubtotal() {
   }, 0);
 }
 
+function getBasketAmount() {
+  return getBasketItems().reduce((sum, item) => sum + item.amount, 0);
+}
+
 function renderBasketItems() {
   const basketItems = document.querySelector("[data-basket-items]");
   const items = getBasketItems();
@@ -24,7 +28,18 @@ function renderBasketSummary() {
   basketSummary.innerHTML = getBasketSummaryTemplate(subtotal, delivery, total);
 }
 
+function renderBasketShortcut() {
+  const basketShortcut = document.querySelector("[data-basket-shortcut]");
+  if (!basketShortcut) return;
+  const subtotal = getSubtotal();
+  const total = subtotal > 0 ? subtotal + deliveryFee : 0;
+  const amount = getBasketAmount();
+  basketShortcut.textContent = getBasketShortcutText(amount, total);
+  basketShortcut.toggleAttribute("data-active", subtotal > 0);
+}
+
 function renderBasket() {
   renderBasketItems();
   renderBasketSummary();
+  renderBasketShortcut();
 }

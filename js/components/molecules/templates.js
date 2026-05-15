@@ -49,6 +49,11 @@ function getBasketSummaryTemplate(subtotal, delivery, total) {
     <div class="summary-total"><span>Gesamt</span><strong>${formatPrice(total)}</strong></div>`;
 }
 
+function getBasketShortcutText(amount, total) {
+  if (amount === 0) return "Warenkorb leer";
+  return `${amount} Artikel · ${formatPrice(total)}`;
+}
+
 function getEmptyBasketTemplate() {
   return `<p class="empty-basket">Dein Warenkorb ist noch leer.</p>`;
 }
