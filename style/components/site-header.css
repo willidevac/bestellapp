@@ -10,7 +10,7 @@
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 18px clamp(16px, 5vw, 64px);
-  background: rgba(16, 15, 20, 0.92);
+  background: rgba(32, 29, 40, 0.92);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px);
 }
@@ -34,6 +34,7 @@
 }
 
 .brand-name {
+  min-width: 0;
   font-size: clamp(1rem, 3vw, 1.25rem);
   line-height: 1.1;
   word-break: break-word;
@@ -89,7 +90,7 @@
 
 @media (max-width: 620px) {
   .site-header {
-    padding-block: 14px;
+    padding: 14px 12px;
   }
 
   .brand {
@@ -102,10 +103,21 @@
   }
 
   .brand-name {
-    max-width: 10ch;
+    max-width: 9ch;
   }
 
   .main-nav[data-open] {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .menu-button {
+    width: 42px;
   }
 }

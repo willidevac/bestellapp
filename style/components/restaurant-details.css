@@ -39,5 +39,6 @@
 @media (max-width: 620px) {
   .restaurant-details {
     grid-template-columns: 1fr;
+    padding-inline: 12px;
   }
 }

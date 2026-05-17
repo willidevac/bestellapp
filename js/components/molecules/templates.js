@@ -51,7 +51,7 @@ function getBasketSummaryTemplate(subtotal, delivery, total) {
 
 function getBasketShortcutText(amount, total) {
   if (amount === 0) return "Warenkorb leer";
-  return `${amount} Artikel · ${formatPrice(total)}`;
+  return `${amount} Artikel - ${formatPrice(total)}`;
 }
 
 function getEmptyBasketTemplate() {

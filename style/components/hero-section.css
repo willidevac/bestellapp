@@ -16,7 +16,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0 0 32px 32px;
   background:
-    linear-gradient(90deg, rgba(10, 12, 20, 0.74), rgba(27, 9, 31, 0.36)),
+    linear-gradient(90deg, rgba(31, 28, 40, 0.56), rgba(66, 28, 68, 0.22)),
     radial-gradient(circle at 74% 22%, rgba(255, 61, 129, 0.44), transparent 15rem),
     radial-gradient(circle at 21% 28%, rgba(37, 215, 255, 0.34), transparent 16rem),
     url("../../assets/img/hero/sakura-fuji-banner.jpg");
@@ -40,7 +40,7 @@
   inset: auto 0 0;
   height: 45%;
   content: "";
-  background: linear-gradient(transparent, rgba(9, 10, 15, 0.84));
+  background: linear-gradient(transparent, rgba(30, 27, 38, 0.7));
   border-radius: inherit;
 }
 
@@ -53,7 +53,7 @@
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   object-fit: contain;
-  background: rgba(9, 10, 15, 0.82);
+  background: rgba(30, 27, 38, 0.76);
   backdrop-filter: blur(4px);
   box-shadow:
     0 18px 48px rgba(0, 0, 0, 0.34),
@@ -70,7 +70,7 @@
   width: min(100%, 820px);
   margin-top: clamp(205px, 28vw, 325px);
   padding: clamp(18px, 4vw, 34px);
-  background: rgba(25, 24, 33, 0.92);
+  background: rgba(45, 41, 54, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-shadow: var(--shadow);
@@ -137,7 +137,7 @@
   padding: 22px;
   background:
     linear-gradient(135deg, rgba(134, 201, 111, 0.16), transparent 48%),
-    rgba(25, 24, 33, 0.9);
+    rgba(45, 41, 54, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-shadow: var(--shadow);
@@ -178,7 +178,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .hero {
     min-height: auto;
     padding-top: 36px;
@@ -218,5 +218,51 @@
   .restaurant-card {
     grid-template-columns: 1fr;
     margin-top: -48px;
+  }
+
+  .restaurant-info {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    padding-inline: 12px;
+  }
+
+  .hero-visual {
+    min-height: 170px;
+    padding: 10px;
+  }
+
+  .hero-banner-logo {
+    max-height: 96px;
+  }
+
+  .restaurant-card,
+  .hero-note {
+    padding: 16px;
+  }
+
+  .restaurant-info h1 {
+    font-size: clamp(2rem, 14vw, 2.85rem);
+  }
+
+  .restaurant-avatar {
+    width: 84px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    padding-inline: 10px;
+  }
+
+  .hero-visual {
+    min-height: 150px;
+  }
+
+  .restaurant-card {
+    margin-top: -34px;
   }
 }

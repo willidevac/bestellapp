@@ -90,7 +90,11 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 760px) {
+  .featured-menu {
+    padding-inline: 12px;
+  }
+
   .section-title {
     display: block;
   }

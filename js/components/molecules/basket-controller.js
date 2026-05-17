@@ -35,7 +35,7 @@ function clearBasket() {
 
 function showBasketMessage(message) {
   const basketMessage = document.querySelector("[data-basket-message]");
-  basketMessage.textContent = message;
+  if (basketMessage) basketMessage.textContent = message;
 }
 
 function handleOrder() {

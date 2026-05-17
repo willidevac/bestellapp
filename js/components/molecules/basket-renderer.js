@@ -30,11 +30,12 @@ function renderBasketSummary() {
 
 function renderBasketShortcut() {
   const basketShortcut = document.querySelector("[data-basket-shortcut]");
-  if (!basketShortcut) return;
+  const basketShortcutLabel = document.querySelector("[data-basket-shortcut-label]");
+  if (!basketShortcut || !basketShortcutLabel) return;
   const subtotal = getSubtotal();
   const total = subtotal > 0 ? subtotal + deliveryFee : 0;
   const amount = getBasketAmount();
-  basketShortcut.textContent = getBasketShortcutText(amount, total);
+  basketShortcutLabel.textContent = getBasketShortcutText(amount, total);
   basketShortcut.toggleAttribute("data-active", subtotal > 0);
 }
 
@@ -42,4 +43,6 @@ function renderBasket() {
   renderBasketItems();
   renderBasketSummary();
   renderBasketShortcut();
+  const msg = document.querySelector("[data-basket-message]");
+  if (msg) msg.textContent = "";
 }

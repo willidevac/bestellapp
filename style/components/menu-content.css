@@ -180,7 +180,7 @@
   box-shadow: 0 0 18px rgba(37, 215, 255, 0.42);
 }
 
-@media (max-width: 620px) {
+@media (max-width: 760px) {
   .dish-card {
     grid-template-columns: 1fr;
   }
@@ -193,6 +193,16 @@
 
   .category-tabs a {
     flex: 1 1 120px;
+  }
+}
+
+@media (max-width: 520px) {
+  .category-heading {
+    align-items: flex-start;
+  }
+
+  .category-heading::after {
+    display: none;
   }
 }
 
